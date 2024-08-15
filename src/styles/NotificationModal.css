@@ -1,0 +1,5 @@
+/* NotificationModal.css */
+.flex.items-center.mb-4 label {
+    margin-left: 5px; /* Adjust this value to make the checkbox and label closer */
+  }
+  

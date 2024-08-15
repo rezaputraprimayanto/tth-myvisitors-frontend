@@ -1,0 +1,31 @@
+/* login.module.css */
+.visitor-button {
+  position: relative;
+  margin-left: auto;
+  border: 2px solid #6a0dad;
+  color: #6a0dad;
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: white;
+  cursor: pointer;
+  padding: 3px 8px;
+}
+
+.visitor-button:hover {
+  background-color: #f0f0f0;
+}
+
+.submit-button {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #e3342f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #cc1f1a;
+}

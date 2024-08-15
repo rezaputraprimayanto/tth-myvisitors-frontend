@@ -1,0 +1,132 @@
+/* internship.module.css */
+
+.body {
+    font-family: Arial, sans-serif;
+    background: url('../../public/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Menambahkan padding untuk memastikan container tidak terlalu dekat dengan tepi layar */
+  }
+  
+  
+  .page-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header img.logo {
+    max-width: 100px;
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  .header img.logo2 {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .form {
+    width: 100%;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .back {
+    background-color: hsl(0, 0%, 40%);
+  }
+  
+  .back:hover {
+    background-color: #0056b3;
+  }
+  
+  .next {
+    background-color: #e30613;
+  }
+  
+  .next:hover {
+    background-color: #c10010;
+  }
+  
+  .loginLink {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007bff;
+  }
+  
+  .loginLink a {
+    color: #007bff;
+  }
+  
+  .loginLink a:hover {
+    text-decoration: underline;
+  }
+  
