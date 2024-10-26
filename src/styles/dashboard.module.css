@@ -1,25 +1,54 @@
-/* .body {
-    font-family: Arial, sans-serif;
-    background: url('../../public/images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  header nav a {
-    font-weight: bold;
-  }
-  
-  main {
-    background-color: white;
-  }
-  
-  button {
-    transition: background-color 0.3s;
-  }
-   */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../public/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../public/fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../public/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../public/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../public/fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* You can also create specific classes for different weights */
+.bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.semi-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}

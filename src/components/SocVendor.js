@@ -35,7 +35,7 @@ const SocVendor= () => {
 
   if (showSuccess) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/background_visitor.jpg')" }}>
+      <div className="min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/backgroundregistervendor.png')" }}>
         <div className="w-full max-w-xl bg-white p-8 rounded-lg shadow-lg">
           <h1 className="text-3xl font-bold mb-4">Berhasil Membuat Akun</h1>
           <h2 className="text-xl font-semibold mb-4">Silahkan LOGIN</h2>
@@ -46,7 +46,7 @@ const SocVendor= () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/background_visitor.jpg')" }}>
+    <div className="min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/backgroundregistervendor.png')" }}>
       <div className="w-full max-w-xl bg-white p-8 rounded-lg shadow-lg">
         <div className="flex justify-between items-center mb-6">
           <img src="/images/tth.png" alt="Logo tth" className="h-12" />

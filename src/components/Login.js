@@ -79,7 +79,7 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-cover bg-center" style={{ backgroundImage: "url('/images/background.jpg')", backgroundSize: '120%' }}>
+    <div className="min-h-screen flex justify-center items-center bg-cover bg-center" style={{ backgroundImage: "url('/images/backgroundregistervisitor.png')", backgroundSize: '100%' }}>
       <div className="w-full max-w-lg bg-white p-6 rounded-lg shadow-lg relative">
         <div className="flex justify-between items-center mb-4">
           <img src="/images/tth.png" alt="Logo tth Indonesia" className="h-16" />

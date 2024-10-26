@@ -1,6 +1,57 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../public/fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../public/fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../public/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../public/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../public/fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+/* You can also create specific classes for different weights */
+.bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.semi-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
 .body {
-  font-family: Arial, sans-serif;
-  background: url('../../public/images/background_visitor.jpg') no-repeat center center fixed;
+  font-family: 'Poppins', sans-serif;
+  background: url('../../public/images/backgroundregistervendor.png') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;

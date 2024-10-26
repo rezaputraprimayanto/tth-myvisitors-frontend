@@ -1,103 +1,230 @@
-.body {
-    font-family: Arial, sans-serif;
-    background: url('../../public/images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../public/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../public/fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../public/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../public/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../public/fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+/* Struktur dasar dan tata letak */
+.landingPage {
+    background-color: #ffffff;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    width: 100%;
 }
 
-.container, .vendor-form {
-    width: 100%;
-    max-width: 600px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1; /* Ensures the container is above the background image */
+.overlapGroupWrapper {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1660px;
+    height: 1024px;
+}
+
+.overlapGroup {
     position: relative;
+    height: 1132px;
+    top: -37px;
 }
 
-.header {
+.backgroundVisitor {
+    position: absolute;
+    width: 1660px;
+    height: 1024px;
+    top: 37px;
+    left: 0;
+    object-fit: cover;
+}
+
+.rectangle {
+    position: absolute;
+    width: 584px;
+    height: 1052px;
+    top: 80px;
+    left: 828px;
+    background-color: #f9f9fb;
+    border-radius: 79px;
+}
+
+.img {
+    position: absolute;
+    width: 181px;
+    height: 148px;
+    top: 862px;
+    left: 82px;
+    object-fit: cover;
+}
+
+.motif {
+    position: absolute;
+    width: 236px;
+    height: 512px;
+    top: 549px;
+    left: 569px;
+    object-fit: cover;
+}
+
+/* Styling teks */
+.textWrapper, .textWrapper2, .textWrapper3, .textWrapper4, .textWrapper5, .textWrapper6, .textWrapper7, .textWrapper8 {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 219px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
     text-align: center;
-    width: 100%;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
 }
 
-.header img.logo {
-    max-width: 100%;
-    height: auto;
-    max-height: 103px;
-    margin-right: auto; 
+.textWrapper {
+    left: 62px;
+    top: 21px;
+    transform: rotate(-12.77deg);
 }
 
-.header img.logo2 {
-    max-width: 100%;
-    height: 90%;
-    max-height: 90px;
+.textWrapper2 {
+    left: 274px;
+    top: 34px;
+    transform: rotate(19.34deg);
 }
 
-.login-buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.textWrapper3 {
+    left: 407px;
+    top: 29px;
+    transform: rotate(0.60deg);
 }
 
-button {
-    width: 160px;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    background-color: #EC6363;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
+.textWrapper4 {
+    left: 72px;
+    top: 187px;
+    transform: rotate(-6.49deg);
 }
 
-button:hover {
-    background-color: #D95252;
+.textWrapper5 {
+    left: 210px;
+    top: 162px;
+    transform: rotate(-0.38deg);
 }
 
-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.textWrapper6 {
+    left: 348px;
+    top: 191px;
+    transform: rotate(7.43deg);
 }
 
-label, input, select, button {
-    margin-bottom: 10px;
-    width: 100%;
+.textWrapper7 {
+    left: 215px;
+    top: 310px;
+    transform: rotate(13.43deg);
 }
 
-input, select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.textWrapper8 {
+    left: 337px;
+    top: 355px;
+    transform: rotate(0.41deg);
 }
 
-h2 {
-    margin-bottom: 10px;
+.textWrapper9 {
+    color: #f11b50;
+    font-family: "Poppins", Helvetica;
+    font-size: 44px;
+    font-weight: 800;
+    left: 913px;
+    position: absolute;
+    text-align: center;
+    top: 161px;
 }
 
-p {
-    margin-bottom: 20px;
+.textWrapper10 {
+    color: #f11b50;
+    font-family: "Poppins", Helvetica;
+    font-size: 44px;
+    font-weight: 400;
+    left: 925px;
+    position: absolute;
+    text-align: center;
+    top: 216px;
 }
 
-/* Tambahkan media query untuk tampilan mobile */
-@media (max-width: 600px) {
-    .login-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .login-buttons button {
-        width: 80%; /* Lebar tombol disesuaikan untuk tampilan mobile */
-    }
+/* Doodle */
+.doodle {
+    position: absolute;
+    width: 585px;
+    height: 251px;
+    top: 810px;
+    left: 827px;
+    object-fit: cover;
 }
+
+/* Button styling dengan background image */
+.buttonVendor {
+    background: url('../../public/images/background dari button masuk sebagai vendor.png') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    width: 492px;
+    height: 167px;
+    top: 338px;
+    left: 881px;
+}
+
+.subTextButton {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.buttonVisitor {
+    background: url('../../public/images/background dari button masuk sebagai visitor.png') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    width: 492px;
+    height: 167px;
+    top: 564px;
+    left: 881px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.buttonVendor, .buttonVisitor {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transisi untuk efek hover */
+  }
+  
+  .buttonVendor:hover, .buttonVisitor:hover {
+    transform: scale(1.05); /* Membesarkan tombol sedikit saat hover */
+  }
+  
+  .buttonVendor:active, .buttonVisitor:active {
+    transform: scale(0.95); /* Memperkecil tombol sedikit saat ditekan */
+  }
+  
