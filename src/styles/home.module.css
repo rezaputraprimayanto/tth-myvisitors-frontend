@@ -29,8 +29,19 @@
 }
 
 /* Struktur dasar dan tata letak */
+.body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../../public/images/backgroundvisitor.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Menambahkan padding untuk memastikan container tidak terlalu dekat dengan tepi layar */
+  }
+  
 .landingPage {
-    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,7 +49,6 @@
 }
 
 .overlapGroupWrapper {
-    background-color: #ffffff;
     overflow: hidden;
     width: 1660px;
     height: 1024px;
@@ -50,14 +60,14 @@
     top: -37px;
 }
 
-.backgroundVisitor {
+/*.backgroundVisitor {
     position: absolute;
     width: 1660px;
     height: 1024px;
     top: 37px;
     left: 0;
     object-fit: cover;
-}
+}*/
 
 .rectangle {
     position: absolute;
@@ -174,7 +184,7 @@
     position: absolute;
     width: 585px;
     height: 251px;
-    top: 810px;
+    top: 815px;
     left: 827px;
     object-fit: cover;
 }

@@ -8,7 +8,7 @@ function Home() {
       <div className={styles.landingPage}>
         <div className={styles.overlapGroupWrapper}>
           <div className={styles.overlapGroup}>
-            <img className={styles.backgroundVisitor} src="/images/backgroundvisitor.png" alt="Background Visitor" />
+            
             <div className={styles.rectangle}></div>
             <img className={styles.img} src="/images/logotthmyvisitorputih.png" alt="Logo" />
             <img className={styles.motif} src="/images/motif2.png" alt="Motif" />

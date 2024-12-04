@@ -15,29 +15,32 @@ import SocVendor from './components/SocVendor';
 import DashboardVendor from './components/DashboardVendor';
 import Admin from './components/Admin';
 import { CheckInProvider } from './contexts/CheckInContext';
+import LabProvider from './contexts/LabContext'; // Import LabProvider
 import './index.css';
 
 function App() {
   return (
     <CheckInProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/RegisterVisitor" element={<Visitor />} />
-          <Route path="/Upload" element={<Upload />} />
-          <Route path="/Soc" element={<Soc />} />
-          <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/check-confirmation" element={<CheckConfirmation />} />
-          <Route path="/upload-letter" element={<UploadLetter />} />
-          <Route path="/LoginVendor" element={<LoginVendor />} />
-          <Route path="/RegisterVendor" element={<RegisterVendor />} />
-          <Route path="/UploadVendor" element={<UploadVendor />} />
-          <Route path="/SocVendor" element={<SocVendor />} />
-          <Route path="/DashboardVendor" element={<DashboardVendor />} />
-          <Route path="/Admin" element={<Admin />} />
-        </Routes>
-      </Router>
+      <LabProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/RegisterVisitor" element={<Visitor />} />
+            <Route path="/Upload" element={<Upload />} />
+            <Route path="/Soc" element={<Soc />} />
+            <Route path="/Dashboard" element={<Dashboard />} />
+            <Route path="/check-confirmation" element={<CheckConfirmation />} />
+            <Route path="/upload-letter" element={<UploadLetter />} />
+            <Route path="/LoginVendor" element={<LoginVendor />} />
+            <Route path="/RegisterVendor" element={<RegisterVendor />} />
+            <Route path="/UploadVendor" element={<UploadVendor />} />
+            <Route path="/SocVendor" element={<SocVendor />} />
+            <Route path="/DashboardVendor" element={<DashboardVendor />} />
+            <Route path="/Admin" element={<Admin />} />
+          </Routes>
+        </Router>
+      </LabProvider>
     </CheckInProvider>
   );
 }
